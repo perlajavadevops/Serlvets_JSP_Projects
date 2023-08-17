@@ -23,12 +23,13 @@ public class UserDao {
 		try {
 			Connection con = getConnection();
 			PreparedStatement ps = con
-					.prepareStatement("insert into register(name,password,email,sex,country) values(?,?,?,?,?)");
-			ps.setString(1, u.getName());
-			ps.setString(2, u.getPassword());
-			ps.setString(3, u.getEmail());
-			ps.setString(4, u.getSex());
-			ps.setString(5, u.getCountry());
+					.prepareStatement("insert into register(id, name,password,email,sex,country) values(?,?,?,?,?,?)");
+			ps.setInt(1, u.getId());
+			ps.setString(2, u.getName());
+			ps.setString(3, u.getPassword());
+			ps.setString(4, u.getEmail());
+			ps.setString(5, u.getSex());
+			ps.setString(6, u.getCountry());
 			status = ps.executeUpdate();
 		} catch (Exception e) {
 			System.out.println(e);

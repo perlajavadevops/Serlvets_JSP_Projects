@@ -18,10 +18,7 @@
 </script>
 
 <!-- Datatable plugin JS library file -->
-<script type="text/javascript"
-	src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
-	
-</script>
+<script type="text/javascript"	src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>View Users</title>
 </head>

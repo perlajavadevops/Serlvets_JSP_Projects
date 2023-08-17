@@ -13,9 +13,7 @@
 <body>
 
 	<%!EmployeeList el = new EmployeeList();
-	ArrayList al = el.list();
-	
-	%>
+	ArrayList al = el.list();%>
 	<c:out value="${al}"></c:out>
 
 	<c:forEach var="number" begin="5" end="10">
@@ -32,5 +30,15 @@
 			</tr>
 		</c:forEach>
 	</table>
+
+	<c:catch var="exe" >
+		<%int a=10/0; %>
+	</c:catch>
+	
+	<c:if test="${exe!=null}">
+	   ${exe.message}
+	</c:if>
+
+	<%-- ${exe} --%>
 </body>
 </html>

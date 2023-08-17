@@ -3,7 +3,7 @@
 <jsp:setProperty property="*" name="u" />
 
 <%
-	int i = UserDao.save1000Records(u);
+	int i = UserDao.save(u);
 	if (i > 0) {
 		response.sendRedirect("adduser-success.jsp");
 	} else {
