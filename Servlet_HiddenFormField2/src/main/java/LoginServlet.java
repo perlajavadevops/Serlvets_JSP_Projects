@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
 			out.print("Welcome, " + name);
 
 			out.print("<form action='ProfileServlet' method='post'> ");
-			out.print("<input type='hidden' name='name' value='" + name + "'>");
+			out.print("<input type='text' name='name' value='" + name + "'>");
 			out.print("<input type='submit' value='go'/> ");
 
 			out.print("</form>");
