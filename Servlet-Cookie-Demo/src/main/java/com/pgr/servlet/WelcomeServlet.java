@@ -3,7 +3,6 @@ package com.pgr.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -28,10 +27,11 @@ public class WelcomeServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		Cookie[] cookies = request.getCookies();
+		System.out.println(cookies);
 		
-		String userName = cookies[0].getValue();
+		String userN = cookies[0].getValue();
 		
-		out.println("<html><body style='color:red'>User Name is " + cookies[0].getValue() + "</body></html>");
+		out.println("<html><body style='color:red'>User Name is " + userN+ "</body></html>");
 
 	}
 

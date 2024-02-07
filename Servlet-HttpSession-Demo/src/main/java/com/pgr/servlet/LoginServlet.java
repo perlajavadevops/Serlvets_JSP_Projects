@@ -42,8 +42,8 @@ public class LoginServlet extends HttpServlet {
 		
 		if (valid) {
 
-			HttpSession httpSession = request.getSession(true);//whwke789986njshsjd282
-			httpSession.setMaxInactiveInterval(60);
+			HttpSession httpSession = request.getSession(true);
+			httpSession.setMaxInactiveInterval(60);//seconds
 			httpSession.setAttribute("userName", userName);
 			httpSession.setAttribute("password", password);
 			out.println("<b>User logged in success and user is </b>"+userName);

@@ -39,9 +39,11 @@ public class LoginServlet extends HttpServlet {
 		boolean valid = loginDao.validateLoginDetails(userName, password);
 		if (valid) {
 
-			ServletContext context = getServletContext();
-			context.setAttribute("userName", userName);
-			context.setAttribute("password", password);
+			/*
+			 * ServletContext context = getServletContext();
+			 * context.setAttribute("userName", userName); context.setAttribute("password",
+			 * password);
+			 */
 			
 			Cookie cookie = new Cookie("userName", userName);
 			response.addCookie(cookie);
