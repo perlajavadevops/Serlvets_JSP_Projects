@@ -39,8 +39,8 @@ public class LoginServlet extends HttpServlet {
 		boolean valid = loginDao.validateLoginDetails(userName, password);
 		if (valid) {
 
-			out.print("<form action='welcome' method='post'> ");
-			out.print("<input type='text' name='name' value='" + userName + "'>");
+			out.print("<form action='welcome' method='get'> ");
+			out.print("<input type='text' name='name' value='" + userName + "'>" );
 			out.print("<input type='submit' value='go'/> ");
 			out.print("</form>");
 			
