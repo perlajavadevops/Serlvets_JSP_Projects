@@ -18,10 +18,10 @@
 
 	if (valid) {
 		
-		session.setMaxInactiveInterval(60);
+		session.setMaxInactiveInterval(60);//seconds
 		session.setAttribute("userName1", userName);
 		session.setAttribute("password1", password);
-		request.getRequestDispatcher("welcome.jsp").forward(request, response);
+		request.getRequestDispatcher("welcome.jsp").include(request, response);
 
 	} else {
 		out.println("Invalid user name....");
