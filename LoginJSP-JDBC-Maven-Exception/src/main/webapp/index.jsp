@@ -1,4 +1,4 @@
-<%@page import="com.pgr.dao.LoginDao, java.util.*;"%>
+<%@page import="com.pgr.dao.LoginDao, java.util.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1" errorPage="error.jsp"%>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
 	<%
 	String userName = request.getParameter("userName");
 	String password = request.getParameter("password");
-
+	
 
 	if(userName.isEmpty()){
 		throw new NullPointerException("Hi The username is empty");

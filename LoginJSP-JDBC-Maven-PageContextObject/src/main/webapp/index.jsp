@@ -18,8 +18,8 @@
 
 	if (valid) {
 		
-		pageContext.setAttribute("userName1", userName, PageContext.APPLICATION_SCOPE);
-		pageContext.setAttribute("password1", password, PageContext.APPLICATION_SCOPE);
+		pageContext.setAttribute("userName1", userName, PageContext.SESSION_SCOPE);
+		pageContext.setAttribute("password1", password, PageContext.SESSION_SCOPE);
 		out.print("<a href='welcome.jsp'>second jsp page</a>");
 	} else {
 		out.println("Invalid user name....");

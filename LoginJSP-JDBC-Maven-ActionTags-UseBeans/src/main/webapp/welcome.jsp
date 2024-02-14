@@ -6,12 +6,12 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="color: blue">
 
 	<%
 	/* 	String userName1 = request.getParameter("userName1");
 		String password1 = request.getParameter("password1"); */
-	out.println("<html><body style='color:red'>User Name is");
+	out.println("User Name is");
 	%>
 	${param.userName1}
 	<%
@@ -19,7 +19,7 @@
 	%>
 	${param.password1}
 	<%
-	out.println("</body></html>");
+
 	%>
 </body>
 </html>

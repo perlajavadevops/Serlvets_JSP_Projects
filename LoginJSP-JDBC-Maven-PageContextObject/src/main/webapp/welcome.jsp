@@ -9,8 +9,8 @@
 <body>
 
 	<%
-	String userName = (String) pageContext.getAttribute("userName1", PageContext.APPLICATION_SCOPE);
-	String password = (String) pageContext.getAttribute("password1", PageContext.APPLICATION_SCOPE);
+	String userName = (String) pageContext.getAttribute("userName1", PageContext.SESSION_SCOPE);
+	String password = (String) pageContext.getAttribute("password1", PageContext.SESSION_SCOPE);
 	out.println("<html><body style='color:red'>User Name is " + userName + " password is " + password + "</body></html>");
 	%>
 </body>

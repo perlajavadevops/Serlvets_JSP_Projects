@@ -33,11 +33,11 @@
 	%>
 	<%-- <%@ include file="welcome.jsp"%> --%>
 
-	<jsp:include page="welcome.jsp"></jsp:include>
-	<%-- 	<jsp:forward page="welcome.jsp">
-		<jsp:param value="<%=userName%>" name="userName1" />
-		<jsp:param value="<%=password%>" name="password1" />
-	</jsp:forward> --%>
+	<%-- <jsp:include page="welcome.jsp"></jsp:include> --%>
+	<jsp:include page="welcome.jsp">
+		<jsp:param value="${param.userName}" name="userName1" />
+		<jsp:param value="${param.password}" name="password1" />
+	</jsp:include>
 	<%
 	} else {
 

@@ -18,18 +18,17 @@
 
 	if (valid) {
 
-		/* session.setMaxInactiveInterval(60);
-		session.setAttribute("userName1", userName);
-		session.setAttribute("password1", password); */
-		/* 	request.getRequestDispatcher("welcome.jsp").forward(request, response); */
 		out.println("Hi");
 	%>
 	<%-- <%@ include file="welcome.jsp"%> --%>
-	
-	<%-- <jsp:include page="welcome.jsp"></jsp:include> --%>
+	<%-- 
+	<jsp:include page="welcome.jsp">
+		<jsp:param value="<%=userName%>" name="userName1" />
+		<jsp:param value="<%=password%>" name="password1" />
+	</jsp:include> --%>
 	<jsp:forward page="welcome.jsp">
-		<jsp:param value="<%=userName %>" name="userName1"/>
-		<jsp:param value="<%=password %>" name="password1"/>
+		<jsp:param value="<%=userName%>" name="userName1" />
+		<jsp:param value="<%=password%>" name="password1" />
 	</jsp:forward>
 	<%
 	} else {

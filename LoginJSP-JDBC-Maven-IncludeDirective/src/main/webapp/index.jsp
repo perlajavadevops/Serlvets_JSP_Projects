@@ -9,6 +9,7 @@
 </head>
 <body>
 
+	<%@ include file="message.jsp"%>
 	<%
 	String userName = request.getParameter("userName");
 	String password = request.getParameter("password");
